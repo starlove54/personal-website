@@ -1,0 +1,3650 @@
+/* importing fonts */
+@font-face {
+  font-family: "ClarkOpti-Demi";
+  src: url(fonts/ClarkOpti-Demi.otf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* navbar starts */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2%;
+  /* 16px */
+  /* font */
+  color: #fff;
+  font-family: "Amatic SC";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5em;
+  /* 24px */
+  line-height: 1.875em;
+}
+
+.nav--elements:hover {
+  opacity: 62%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* navbar mediaquery starts */
+
+@media (max-width: 430px) {
+  .navbar {
+    justify-content: center;
+    padding: 0;
+    font-size: 1.2em;
+    /* 19.2px */
+  }
+}
+
+/* navbar mediaquery ends */
+/* navbar ends */
+
+/* homepage or slide 1 starts */
+
+#slide1-page {
+  min-height: 100vh;
+  background-color: #f0b720;
+  /* setting animated background colour starting from home page */
+  animation: backgroundColor1 60s steps(1) infinite;
+  /* 6 phases so if 60s duration 10 secs each phase gets  */
+}
+
+/* animating background colour of home page starts */
+@keyframes backgroundColor1 {
+  0% {
+    background-color: #f0b720;
+  }
+
+  16.66% {
+    background-color: #6fdfdf;
+  }
+
+  33.32% {
+    background-color: #83bd75;
+  }
+
+  49.98% {
+    background-color: #ffa1a1;
+  }
+
+  66.64% {
+    background-color: #383838;
+  }
+
+  83.3% {
+    background-color: #f0b720;
+  }
+
+  100% {
+    background-color: #f0b720;
+  }
+}
+/* animating background colour of home page ends */
+
+/* main starts */
+main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.main--title {
+  /* main title will be same*/
+  text-align: center;
+  margin-top: 3%;
+
+  /* font */
+  font-family: Amatic SC, sans-serif;
+  color: #fff;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 128px;
+  /* 128px  or 8em*/
+  line-height: 140px;
+  /* 202 px originally*/
+}
+
+.title1 {
+  margin-bottom: 0;
+  animation: rotateTitle1 10s ease-out infinite;
+}
+/* animating properties(rotation) of title text starts */
+@keyframes rotateTitle1 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+/* animating properties(rotation) of title text ends */
+
+.title1::after {
+  content: "";
+
+  animation: titleTextAnimation1 60s steps(1) infinite normal;
+}
+
+/* animating properties(content) of title text starts */
+
+@keyframes titleTextAnimation1 {
+  0% {
+    content: "NAMASTE! I'M ANUBHAV";
+  }
+
+  16.66% {
+    content: "DESIGN + DEVELOPMENT ?";
+  }
+
+  33.32% {
+    content: "STORYTELLING’S MY JAM!";
+  }
+
+  49.98% {
+    content: "MULTIDISCIPLINE";
+  }
+
+  66.64% {
+    content: "WORK AND PLAY :)";
+  }
+
+  83.3% {
+    content: "LET'S COLLABORATE";
+  }
+
+  100% {
+    content: "NAMASTE! I'M ANUBHAV";
+  }
+}
+/* animating properties(content) of title text ends */
+
+.main--intro {
+  opacity: 75%;
+  max-width: 40%;
+  text-align: center;
+
+  /* font */
+  font-family: ClarkOpti-Demi, sans-serif;
+  color: #494c4d;
+  font-style: bold;
+  font-weight: 600;
+  font-size: 24px;
+  /* 1.5em */
+  line-height: 130%;
+}
+
+.intro {
+  margin-top: 0;
+  margin-bottom: 0.625em;
+  /* 10px */
+  animation: rotateIntro1 10s ease-out infinite;
+}
+
+/* animating properties(rotation) of intro text starts */
+
+@keyframes rotateIntro1 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+
+/* animating properties(rotation) of intro text ends */
+
+.intro::after {
+  content: "";
+  animation: introTextAnimation1 60s steps(1) infinite normal;
+}
+
+/* animating properties of intro text starts */
+
+@keyframes introTextAnimation1 {
+  0% {
+    content: "I’M A SOFTWARE DEVELOPER AND A DIGITAL ARTIST, FEELS GREAT TO HAVE YOU ON BOARD :)";
+  }
+
+  16.66% {
+    content: "I LOVE TO WORK ON CREATING MEANINGFUL APPLICATIONS WITH SIMPLE, INTUITIVE DESIGNS TO ENABLE RICH EXPERIENCES.";
+  }
+
+  33.32% {
+    content: " APART FROM ADDING MAGIC TO MUNDANE, STORIES MAKE OUR LIVES SPECIAL. ";
+  }
+
+  49.98% {
+    content: "DONNING DIFFERENT HATS IN DOMAINS LIKE  DESIGN, DEVELOPMENT, VIDEO PRODUCTION ETC, IS WHAT I DO.";
+  }
+
+  66.64% {
+    content: "MY GOAL IS TO ENRICH MY PROJECTS WITH SPEED, INTERACTIVITY AND RELIABILITY ACROSS ALL TARGET DEVICES AND PLATFORMS. ";
+    color: #fff;
+  }
+
+  83.3% {
+    content: "IF YOU FEEL INTERESTED IN WORKING TOGETHER ON A PROJECT THEN PLEASE GET IN TOUCH!";
+    color: #494545;
+  }
+
+  100% {
+    content: "I’M A SOFTWARE DEVELOPER AND A DIGITAL ARTIST.";
+  }
+}
+/* animating properties of intro text ends */
+
+/* more info button  starts*/
+.main--moreinfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8.563em;
+  /* 137px */
+  height: 2.563em;
+  /* 41px */
+  background: url("./images/more-info-box.png") no-repeat;
+  cursor: pointer;
+  animation: rotateMoreInfo 10s ease-out infinite;
+}
+
+/* animating properties(rotation) of moreinfo button starts */
+@keyframes rotateMoreInfo {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+/* animating properties(rotation) of moreinfo button ends */
+
+.moreinfo_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* font */
+  font-family: Amatic SC, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.125em;
+  /* 34px */
+  line-height: 1.875em;
+  /* 30px */
+  color: #fff;
+}
+
+.main--moreinfo:hover .moreinfo_text {
+  width: 8.563em;
+  /* 137px */
+  height: 41px;
+  /* 41px */
+  color: #494c4d;
+  background: url("./images/more-info-filled.png") no-repeat;
+  transition: 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+/* more info button  ends*/
+
+/* main navbullets starts */
+.main--navbullets {
+  display: flex;
+  gap: 2.5em;
+  /* 40px */
+  margin-top: 15px;
+  margin-left: 2%;
+  margin-right: 2%;
+  animation: rotateNavBullets1 10s ease-out infinite;
+}
+
+/* animating properties(rotation) of navbullets  starts */
+@keyframes rotateNavBullets1 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+/* animating properties(rotation) of navbullets ends */
+
+/* 1 */
+.navbullet-1 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav1-bullet1Animation 60s steps(1) infinite;
+}
+
+.navbullet-1:hover {
+  background: url("./images/bullet-selected.png") !important ;
+}
+/* animating properties(filled/unfilled) of navbullet 1 starts */
+
+@keyframes nav1-bullet1Animation {
+  0% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  16.66% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet 1 ends */
+
+/* 2 */
+.navbullet-2 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav1-bullet2Animation 60s steps(1) infinite;
+}
+
+.navbullet-2:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+/* animating properties(filled/unfilled) of navbullet 2 starts */
+
+@keyframes nav1-bullet2Animation {
+  0% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  16.66% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  33.32% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet 2 ends */
+
+/* 3 */
+.navbullet-3 {
+  width: 1.171em;
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav1-bullet3Animation 60s steps(1) infinite;
+}
+
+.navbullet-3:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet 3 starts */
+
+@keyframes nav1-bullet3Animation {
+  0% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  16.66% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  33.32% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  49.98% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet 3 ends */
+
+/* 4 */
+.navbullet-4 {
+  width: 1.171em;
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav1-bullet4Animation 60s steps(1) infinite;
+}
+
+.navbullet-4:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet 4 starts */
+@keyframes nav1-bullet4Animation {
+  0% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  16.66% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  33.32% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  49.98% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  66.64% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet 4 ends */
+
+/* 5 */
+.navbullet-5 {
+  width: 1.171em;
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav1-bullet5Animation 60s steps(1) infinite;
+}
+
+.navbullet-5:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet 5 starts */
+@keyframes nav1-bullet5Animation {
+  0% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  16.66% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  33.32% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  49.98% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  66.64% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  83.3% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet 5 ends */
+
+/* 6 */
+.navbullet-6 {
+  width: 1.171em;
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav1-bullet6Animation 60s steps(1) infinite;
+}
+
+.navbullet-6:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet 6 starts */
+@keyframes nav1-bullet6Animation {
+  0% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  16.66% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  33.32% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  49.98% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  66.64% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  83.3% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  100% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet 6 ends */
+/* main navbullets ends */
+
+/* footer for slide 1 animation  starts  (DONT DELETE) */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: fredoka, sans-serif;
+  margin-top: 17.5em;
+  margin-right: 1em;
+  margin-left: 1em;
+  /* 202px */
+  color: #fff;
+  animation: footeranimation 60s steps(1, end) infinite;
+}
+
+/* footer message starts */
+.footer--message {
+  font-family: Source Code Pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.813em;
+  /* 13px */
+  line-height: 1em;
+  /* 16px */
+}
+
+.footer--heart {
+  position: relative;
+  top: 0.438em;
+  /* 7px */
+}
+
+.message-1 {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.message-2 {
+  font-weight: 700;
+}
+/* footer message ends */
+
+/* footer icons start */
+.footer--icons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.8em;
+  /* 28.8px */
+}
+
+.icons--twitter:hover {
+  opacity: 50%;
+}
+
+.icons--dribble:hover {
+  opacity: 50%;
+}
+
+.icons--artstation:hover {
+  opacity: 50%;
+}
+
+.icons--instagram:hover {
+  opacity: 50%;
+}
+
+.icons--mail:hover {
+  opacity: 50%;
+}
+
+.icons--github:hover {
+  opacity: 50%;
+}
+
+.icons--linkedin:hover {
+  opacity: 50%;
+}
+
+.icons--medium:hover {
+  opacity: 50%;
+}
+/* footer icons ends */
+
+/* footer copyright starts */
+.footer--copyright {
+  margin-top: 0.2%;
+
+  /* fonts */
+  font-family: "Franklin Gothic Book";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625em;
+  /* 10px */
+  line-height: 0.688em;
+  /* 11px */
+  letter-spacing: -0.07em;
+}
+/* footer copyright ends */
+
+/* media query for slide1 or homepage starts */
+/* for mobile viewport starts */
+@media (max-width: 430px) {
+  .main--title {
+    font-size: 2.5em;
+    /* desktop 128px */
+    /* tablet 96px */
+    /* mobilet 40px */
+    line-height: 54.16px;
+    /* desktop 202px */
+    /* tablet 130px */
+    /* tablet 54.16px */
+    margin-top: 40%;
+    /* desktop 30%; */
+  }
+
+  .main--intro {
+    font-size: 0.75em;
+    /* desktop 24px */
+    /* tablet  16px */
+    /* mobile  12px */
+    max-width: 65%;
+    /* desktop 40% */
+    /* monile 65% */
+  }
+
+  .moreinfo_text {
+    font-size: 1em;
+    /*desktop 34px */
+    /*tablet 21.25px */
+    /*mobile 21.248px */
+  }
+  .footer {
+    margin-top: 13.5em;
+  }
+
+  .main--navbullets {
+    gap: 0.875em;
+    /*desktop 40px */
+    /*tablet 25px */
+    /*mobile 14px */
+  }
+}
+/* for mobile viewport ends */
+/* media query for slide1 or homepage ends */
+/* homepage or slide1 ends */
+
+/* slide2  starts*/
+#slide2-page {
+  min-height: 100vh;
+  background-color: #6fdfdf;
+  /* setting animated background colour starting from slide2 */
+  animation: backgroundColor2 60s steps(1) infinite normal;
+  /* 6 phases so if 60s duration 10 secs each phase gets  */
+}
+
+/* animating background colour of  slide2 starts */
+@keyframes backgroundColor2 {
+  0% {
+    background-color: #6fdfdf;
+  }
+
+  16.66% {
+    background-color: #83bd75;
+  }
+
+  33.32% {
+    background-color: #ffa1a1;
+  }
+
+  49.98% {
+    background-color: #383838;
+  }
+
+  66.64% {
+    background-color: #f0b720;
+  }
+
+  83.3% {
+    background-color: #f0b720;
+  }
+
+  100% {
+    background-color: #6fdfdf;
+  }
+}
+/* animating background colour of  slide2 ends */
+
+.title2 {
+  margin-bottom: 0;
+  animation: rotateTitle2 10s ease-out infinite;
+}
+/* animating properties(rotation) of title2 text starts */
+@keyframes rotateTitle2 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+/* animating properties(rotation) of title2 text ends */
+
+.title2::after {
+  content: "";
+  animation: titleTextAnimation2 60s steps(1) infinite normal;
+}
+
+/* animating properties(content) of title2 text starts */
+
+@keyframes titleTextAnimation2 {
+  0% {
+    content: "DESIGN + DEVELOPMENT ?";
+  }
+
+  16.66% {
+    content: "STORYTELLING’S MY JAM!";
+  }
+
+  33.32% {
+    content: "MULTIDISCIPLINE";
+  }
+
+  49.98% {
+    content: "WORK AND PLAY :)";
+  }
+
+  66.64% {
+    content: "LET'S COLLABORATE";
+  }
+
+  83.3% {
+    content: "NAMASTE! I'M ANUBHAV";
+  }
+
+  100% {
+    content: "DESIGN + DEVELOPMENT ?";
+  }
+}
+/* animating properties(content) of title2 text ends */
+
+.intro2 {
+  margin-top: 0;
+  margin-bottom: 0.625em;
+  animation: rotateIntro2 10s ease-out infinite;
+}
+
+/* animating properties(rotation) of intro2 text starts */
+
+@keyframes rotateIntro2 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+
+/* animating properties(rotation) of intro2 text ends */
+
+.intro2::after {
+  content: "";
+  animation: introTextAnimation2 60s steps(1) infinite normal;
+}
+
+/* animating properties of intro2 text starts */
+@keyframes introTextAnimation2 {
+  0% {
+    content: "I LOVE TO WORK ON CREATING MEANINGFUL APPLICATIONS WITH SIMPLE, INTUITIVE DESIGNS TO ENABLE RICH EXPERIENCES.";
+  }
+
+  16.66% {
+    content: " APART FROM ADDING MAGIC TO MUNDANE, STORIES MAKE OUR LIVES SPECIAL. ";
+  }
+
+  33.32% {
+    content: "DONNING DIFFERENT HATS IN DOMAINS LIKE  DESIGN, DEVELOPMENT, VIDEO PRODUCTION ETC, IS WHAT I DO.";
+  }
+
+  49.98% {
+    content: "MY GOAL IS TO ENRICH MY PROJECTS WITH SPEED, INTERACTIVITY AND RELIABILITY ACROSS ALL TARGET DEVICES AND PLATFORMS. ";
+    color: #fff;
+  }
+
+  66.64% {
+    content: "IF YOU FEEL INTERESTED IN WORKING TOGETHER ON A PROJECT THEN PLEASE GET IN TOUCH!";
+    color: #494545;
+  }
+
+  83.3% {
+    content: "I’M A SOFTWARE DEVELOPER AND A DIGITAL ARTIST, FEELS GREAT TO HAVE YOU ON BOARD :)";
+  }
+
+  100% {
+    content: "I LOVE TO WORK ON CREATING MEANINGFUL APPLICATIONS WITH SIMPLE, INTUITIVE DESIGNS TO ENABLE RICH EXPERIENCES.";
+  }
+}
+/* animating properties of intro2 text ends */
+
+/* main navbullets2 starts */
+
+.main--navbullets2 {
+  /* needed to provide bottom margin to slides */
+
+  display: flex;
+  gap: 2.5em;
+  /* 40px */
+  margin-top: 15px;
+  margin-left: 2%;
+  margin-right: 2%;
+  /* margin-bottom: 286px; */
+  animation: rotateNavBullets2 10s ease-out infinite;
+}
+
+/* animating properties(rotation) of navbullets2  starts */
+
+@keyframes rotateNavBullets2 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+
+/* animating properties(rotation) of navbullets2 ends */
+
+/* 1 */
+.navbullet2-1 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav2-bullet1Animation 60s steps(1) infinite;
+}
+
+.navbullet2-1:hover {
+  background: url("./images/bullet-selected.png") !important ;
+}
+/* animating properties(filled/unfilled) of navbullet2-1 starts */
+
+@keyframes nav2-bullet1Animation {
+  66.64% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  83.3% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  100% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet2-1 ends */
+
+/* 2 */
+.navbullet2-2 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav2-bullet2Animation 60s steps(1) infinite;
+}
+
+.navbullet2-2:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet2-2 starts */
+@keyframes nav2-bullet2Animation {
+  0% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  16.66% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet2-2 ends */
+
+/* 3 */
+.navbullet2-3 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav2-bullet3Animation 60s steps(1) infinite;
+}
+
+.navbullet2-3:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet2-3 starts */
+@keyframes nav2-bullet3Animation {
+  0% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  16.66% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  33.32% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet2-3 ends */
+
+/* 4 */
+.navbullet2-4 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav2-bullet4Animation 60s steps(1) infinite;
+}
+
+.navbullet2-4:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet2-4 starts */
+@keyframes nav2-bullet4Animation {
+  16.66% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  33.32% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  49.98% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet2-4 ends */
+
+/* 5 */
+.navbullet2-5 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav2-bullet5Animation 60s steps(1) infinite;
+}
+
+.navbullet2-5:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet2-5 starts */
+@keyframes nav2-bullet5Animation {
+  33.32% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  49.98% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  66.64% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet2-5 ends */
+
+/* 6 */
+.navbullet2-6 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav2-bullet6Animation 60s steps(1) infinite;
+}
+
+.navbullet2-6:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet2-6 starts */
+@keyframes nav2-bullet6Animation {
+  66.64% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  83.3% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet2-6 ends */
+/* main navbullets2 ends */
+
+/* media query for slide2   starts */
+/* for tablet   viewport starts*/
+@media (max-width: 1250px) and (min-width: 760px) {
+  .main--navbullets2 {
+    gap: 1.563em;
+    /*desktop 40px */
+    /*tablet 25px */
+  }
+}
+/* for tablet   viewport ends */
+
+/* for mobile viewport starts */
+@media (max-width: 430px) {
+  .main--navbullets2 {
+    gap: 0.875em;
+    /*desktop 40px */
+    /*tablet 25px */
+    /*mobile 14px */
+  }
+}
+/* for mobile viewport ends */
+/* media query for slide2 ends */
+/* slide2  ends*/
+
+/* slide3 starts */
+#slide3-page {
+  min-height: 100vh;
+  background-color: #83bd75;
+  /* setting animated background colour starting from slide3 */
+  animation: backgroundColor3 60s steps(1) infinite normal;
+  /* 6 phases so if 60s duration 10 secs each phase gets  */
+}
+
+/* animating background colour of  slide3 starts */
+@keyframes backgroundColor3 {
+  0% {
+    background-color: #83bd75;
+  }
+
+  16.66% {
+    background-color: #ffa1a1;
+  }
+
+  33.32% {
+    background-color: #383838;
+  }
+
+  49.98% {
+    background-color: #f0b720;
+  }
+
+  66.64% {
+    background-color: #f0b720;
+  }
+
+  83.3% {
+    background-color: #6fdfdf;
+  }
+
+  100% {
+    background-color: #83bd75;
+  }
+}
+/* animating background colour of  slide3 ends */
+
+.title3 {
+  margin-bottom: 0;
+  animation: rotateTitle3 10s ease-out infinite;
+}
+
+/* animating properties(rotation) of title3 text starts */
+@keyframes rotateTitle3 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+/* animating properties(rotation) of title3 text ends */
+
+.title3::after {
+  content: "";
+  animation: titleTextAnimation3 60s steps(1) infinite normal;
+}
+
+/* animating properties(content) of title3 text starts */
+@keyframes titleTextAnimation3 {
+  0% {
+    content: "STORYTELLING’S MY JAM!";
+  }
+
+  16.66% {
+    content: "MULTIDISCIPLINE";
+  }
+
+  33.32% {
+    content: "WORK AND PLAY :)";
+  }
+
+  49.98% {
+    content: "LET'S COLLABORATE";
+  }
+
+  66.64% {
+    content: "NAMASTE! I'M ANUBHAV";
+  }
+
+  83.3% {
+    content: "DESIGN + DEVELOPMENT ?";
+  }
+
+  100% {
+    content: "STORYTELLING’S MY JAM!";
+  }
+}
+/* animating properties(content) of title3 text ends */
+
+.intro3 {
+  margin-top: 0;
+  margin-bottom: 0.625em;
+  animation: rotateIntro3 10s ease-out infinite;
+}
+
+/* animating properties(rotation) of intro3 text starts */
+@keyframes rotateIntro3 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+/* animating properties(rotation) of intro3 text ends */
+
+.intro3::after {
+  content: "";
+  animation: introTextAnimation3 60s steps(1) infinite normal;
+}
+
+/* animating properties of intro3 text starts */
+@keyframes introTextAnimation3 {
+  0% {
+    content: " APART FROM ADDING MAGIC TO MUNDANE, STORIES MAKE OUR LIVES SPECIAL. ";
+  }
+
+  16.66% {
+    content: "DONNING DIFFERENT HATS IN DOMAINS LIKE  DESIGN, DEVELOPMENT, VIDEO PRODUCTION ETC, IS WHAT I DO.";
+  }
+
+  33.32% {
+    content: "MY GOAL IS TO ENRICH MY PROJECTS WITH SPEED, INTERACTIVITY AND RELIABILITY ACROSS ALL TARGET DEVICES AND PLATFORMS. ";
+    color: #fff;
+  }
+
+  49.98% {
+    content: "IF YOU FEEL INTERESTED IN WORKING TOGETHER ON A PROJECT THEN PLEASE GET IN TOUCH!";
+    color: #494545;
+  }
+
+  66.64% {
+    content: "I’M A SOFTWARE DEVELOPER AND A DIGITAL ARTIST, FEELS GREAT TO HAVE YOU ON BOARD :)";
+  }
+
+  83.3% {
+    content: "I LOVE TO WORK ON CREATING MEANINGFUL APPLICATIONS WITH SIMPLE, INTUITIVE DESIGNS TO ENABLE RICH EXPERIENCES.";
+  }
+
+  100% {
+    content: " APART FROM ADDING MAGIC TO MUNDANE, STORIES MAKE OUR LIVES SPECIAL. ";
+  }
+}
+/* animating properties of intro3 text ends */
+/* main navbullets3 starts */
+
+.main--navbullets3 {
+  /* needed to provide bottom margin to slides */
+  display: flex;
+  gap: 2.5em;
+  /* 40px */
+  margin-top: 15px;
+  margin-left: 2%;
+  margin-right: 2%;
+  /* margin-bottom: 286px; */
+  animation: rotateNavBullets3 10s ease-out infinite;
+}
+
+/* animating properties(rotation) of navbullets3  starts */
+
+@keyframes rotateNavBullets3 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+
+/* animating properties(rotation) of navbullets3 ends */
+
+/* 1 */
+.navbullet3-1 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav3-bullet1Animation 60s steps(1) infinite;
+}
+
+.navbullet3-1:hover {
+  background: url("./images/bullet-selected.png") !important ;
+}
+/* animating properties(filled/unfilled) of navbullet3-1 starts */
+
+@keyframes nav3-bullet1Animation {
+  49.98% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  66.64% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  83.3% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet3-1 ends */
+
+/* 2 */
+.navbullet3-2 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav3-bullet2Animation 60s steps(1) infinite;
+}
+
+.navbullet3-2:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet3-2 starts */
+
+@keyframes nav3-bullet2Animation {
+  66.64% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  83.3% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  100% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet3-2 ends */
+
+/* 3 */
+.navbullet3-3 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav3-bullet3Animation 60s steps(1) infinite;
+}
+
+.navbullet3-3:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet3-3 starts */
+
+@keyframes nav3-bullet3Animation {
+  0% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  16.66% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet3-3 ends */
+
+/* 4 */
+.navbullet3-4 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav3-bullet4Animation 60s steps(1) infinite;
+}
+
+.navbullet3-4:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet3-4 starts */
+
+@keyframes nav3-bullet4Animation {
+  16.66% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  33.32% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet3-4 ends */
+
+/* 5 */
+.navbullet3-5 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav3-bullet5Animation 60s steps(1) infinite;
+}
+
+.navbullet3-5:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet3-5 starts */
+
+@keyframes nav3-bullet5Animation {
+  33.32% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  49.98% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet3-5 ends */
+/* 6 */
+.navbullet3-6 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav3-bullet6Animation 60s steps(1) infinite;
+}
+
+.navbullet3-6:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet3-6 starts */
+
+@keyframes nav3-bullet6Animation {
+  49.98% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  66.64% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  83.3% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet3-6 ends */
+/* main navbullets3 ends */
+
+/* media query for slide3   starts */
+/* for tablet viewport starts*/
+@media (max-width: 1250px) and (min-width: 760px) {
+  .main--navbullets3 {
+    gap: 1.563em;
+    /*desktop 40px */
+    /*tablet 25px */
+  }
+}
+/* for tablet viewport ends */
+
+/* for mobile viewport starts */
+@media (max-width: 430px) {
+  .main--navbullets3 {
+    gap: 0.875em;
+    /*desktop 40px */
+    /*tablet 25px */
+    /*mobile 14px */
+  }
+}
+/* for mobile viewport ends */
+/* media query for slide3 ends */
+/* slide3 ends */
+
+/* slide4 starts */
+#slide4-page {
+  min-height: 100vh;
+  background-color: #ffa1a1;
+  /* setting animated background colour starting from slide4 */
+  animation: backgroundColor4 60s steps(1) infinite normal;
+  /* 6 phases so if 60s duration 10 secs each phase gets  */
+}
+
+/* animating background colour of  slide4 starts */
+@keyframes backgroundColor4 {
+  0% {
+    background-color: #ffa1a1;
+  }
+
+  16.66% {
+    background-color: #383838;
+  }
+
+  33.32% {
+    background-color: #f0b720;
+  }
+
+  49.98% {
+    background-color: #f0b720;
+  }
+
+  66.64% {
+    background-color: #6fdfdf;
+  }
+
+  83.3% {
+    background-color: #83bd75;
+  }
+
+  100% {
+    background-color: #ffa1a1;
+  }
+}
+/* animating background colour of  slide4 ends */
+
+.title4 {
+  margin-bottom: 0;
+  animation: rotateTitle4 10s ease-out infinite;
+}
+
+/* animating properties(rotation) of title4 text starts */
+
+@keyframes rotateTitle4 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+
+/* animating properties(rotation) of title4 text ends */
+
+.title4::after {
+  content: "";
+  animation: titleTextAnimation4 60s steps(1) infinite normal;
+}
+
+/* animating properties(content) of title4 text starts */
+@keyframes titleTextAnimation4 {
+  0% {
+    content: "MULTIDISCIPLINE";
+  }
+
+  16.66% {
+    content: "WORK AND PLAY :)";
+  }
+
+  33.32% {
+    content: "LET'S COLLABORATE";
+  }
+
+  49.98% {
+    content: "NAMASTE! I'M ANUBHAV";
+  }
+
+  66.64% {
+    content: "DESIGN + DEVELOPMENT ?";
+  }
+
+  83.3% {
+    content: "STORYTELLING’S MY JAM!";
+  }
+
+  100% {
+    content: "MULTIDISCIPLINE";
+  }
+}
+/* animating properties(content) of title4 text ends */
+
+.intro4 {
+  margin-top: 0;
+  margin-bottom: 0.625em;
+  animation: rotateIntro4 10s ease-out infinite;
+}
+
+/* animating properties(rotation) of intro4 text starts */
+@keyframes rotateIntro4 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+/* animating properties(rotation) of intro4 text ends */
+
+.intro4::after {
+  content: "";
+  animation: introTextAnimation4 60s steps(1) infinite normal;
+}
+
+/* animating properties of intro4 text starts */
+@keyframes introTextAnimation4 {
+  0% {
+    content: "DONNING DIFFERENT HATS IN DOMAINS LIKE  DESIGN, DEVELOPMENT, VIDEO PRODUCTION ETC, IS WHAT I DO.";
+  }
+
+  16.66% {
+    content: "MY GOAL IS TO ENRICH MY PROJECTS WITH SPEED, INTERACTIVITY AND RELIABILITY ACROSS ALL TARGET DEVICES AND PLATFORMS. ";
+    color: #fff;
+  }
+
+  33.32% {
+    content: "IF YOU FEEL INTERESTED IN WORKING TOGETHER ON A PROJECT THEN PLEASE GET IN TOUCH!";
+    color: #494545;
+  }
+
+  49.98% {
+    content: "I’M A SOFTWARE DEVELOPER AND A DIGITAL ARTIST, FEELS GREAT TO HAVE YOU ON BOARD :)";
+  }
+
+  66.64% {
+    content: "I LOVE TO WORK ON CREATING MEANINGFUL APPLICATIONS WITH SIMPLE, INTUITIVE DESIGNS TO ENABLE RICH EXPERIENCES.";
+  }
+
+  83.3% {
+    content: " APART FROM ADDING MAGIC TO MUNDANE, STORIES MAKE OUR LIVES SPECIAL. ";
+  }
+
+  100% {
+    content: "DONNING DIFFERENT HATS IN DOMAINS LIKE  DESIGN, DEVELOPMENT, VIDEO PRODUCTION ETC, IS WHAT I DO.";
+  }
+}
+/* animating properties of intro4 text ends */
+/* main navbullets4 starts */
+
+.main--navbullets4 {
+  /* needed to provide bottom margin to slides */
+  display: flex;
+  gap: 2.5em;
+  /* 40px */
+  margin-top: 15px;
+  margin-left: 2%;
+  margin-right: 2%;
+  /* margin-bottom: 286px; */
+  animation: rotateNavBullets4 10s ease-out infinite;
+}
+
+/* animating properties(rotation) of navbullets4  starts */
+
+@keyframes rotateNavBullets4 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+
+/* animating properties(rotation) of navbullets4 ends */
+
+/* 1 */
+.navbullet4-1 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav4-bullet1Animation 60s steps(1) infinite;
+}
+
+.navbullet4-1:hover {
+  background: url("./images/bullet-selected.png") !important ;
+}
+/* animating properties(filled/unfilled) of navbullet4-1 starts */
+
+@keyframes nav4-bullet1Animation {
+  49.98% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  66.64% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  83.3% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet4-1 ends */
+
+/* 2 */
+.navbullet4-2 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav4-bullet2Animation 60s steps(1) infinite;
+}
+
+.navbullet4-2:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet4-2 starts */
+
+@keyframes nav4-bullet2Animation {
+  49.98% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  66.64% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  83.3% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet4-2 ends */
+
+/* 3 */
+.navbullet4-3 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav4-bullet3Animation 60s steps(1) infinite;
+}
+
+.navbullet4-3:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet4-3 starts */
+
+@keyframes nav4-bullet3Animation {
+  66.64% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  83.3% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  100% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet4-3 ends */
+
+/* 4 */
+.navbullet4-4 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav4-bullet4Animation 60s steps(1) infinite;
+}
+
+.navbullet4-4:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet4-4 starts */
+
+@keyframes nav4-bullet4Animation {
+  0% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  16.66% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet4-4 ends */
+
+/* 5 */
+.navbullet4-5 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav4-bullet5Animation 60s steps(1) infinite;
+}
+
+.navbullet4-5:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet4-5 starts */
+
+@keyframes nav4-bullet5Animation {
+  16.66% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  33.32% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet4-5 ends */
+
+/* 6 */
+.navbullet4-6 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+
+  animation: nav4-bullet6Animation 60s steps(1) infinite;
+}
+
+.navbullet4-6:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet4-6 starts */
+
+@keyframes nav4-bullet6Animation {
+  33.32% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  49.98% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet4-6 ends */
+/* main navbullets4 ends */
+
+/* media query for slide4   starts */
+/* for tablet viewport starts*/
+@media (max-width: 1250px) and (min-width: 760px) {
+  .main--navbullets4 {
+    gap: 1.563em;
+    /*desktop 40px */
+    /*tablet 25px */
+  }
+}
+/* for tablet viewport ends */
+
+/* for mobile viewport starts */
+@media (max-width: 430px) {
+  .main--navbullets4 {
+    gap: 0.875em;
+    /*desktop 40px */
+    /*tablet 25px */
+    /*mobile 14px */
+  }
+}
+/* for mobile viewport ends */
+/* media query for slide4 ends */
+/* slide4 ends */
+
+/* slide5 starts */
+#slide5-page {
+  background-color: #383838;
+  min-height: 100vh;
+  /* setting animated background colour starting from slide5 */
+  animation: backgroundColor5 60s steps(1) infinite normal;
+  /* 6 phases so if 60s duration 10 secs each phase gets  */
+}
+
+/* animating background colour of  slide5 starts */
+@keyframes backgroundColor5 {
+  0% {
+    background-color: #383838;
+  }
+
+  16.66% {
+    background-color: #f0b720;
+  }
+
+  33.32% {
+    background-color: #f0b720;
+  }
+
+  49.98% {
+    background-color: #6fdfdf;
+  }
+
+  66.64% {
+    background-color: #83bd75;
+  }
+
+  83.3% {
+    background-color: #ffa1a1;
+  }
+
+  100% {
+    background-color: #383838;
+  }
+}
+/* animating background colour of  slide5 ends */
+
+.title5 {
+  margin-bottom: 0;
+  animation: rotateTitle5 10s ease-out infinite;
+}
+
+/* animating properties(rotation) of title5 text starts */
+
+@keyframes rotateTitle5 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+
+/* animating properties(rotation) of title5 text ends */
+
+.title5::after {
+  content: "";
+  animation: titleTextAnimation5 60s steps(1) infinite normal;
+}
+
+/* animating properties(content) of title5 text starts */
+
+@keyframes titleTextAnimation5 {
+  0% {
+    content: "WORK AND PLAY :)";
+  }
+
+  16.66% {
+    content: "LET'S COLLABORATE";
+  }
+
+  33.32% {
+    content: "NAMASTE! I'M ANUBHAV";
+  }
+
+  49.98% {
+    content: "DESIGN + DEVELOPMENT ?";
+  }
+
+  66.64% {
+    content: "STORYTELLING’S MY JAM!";
+  }
+
+  83.3% {
+    content: "MULTIDISCIPLINE";
+  }
+
+  100% {
+    content: "WORK AND PLAY :)";
+  }
+}
+/* animating properties(content) of title5 text ends */
+
+.intro5 {
+  margin-top: 0;
+  margin-bottom: 0.625em;
+  animation: rotateIntro5 10s ease-out infinite;
+}
+
+/* animating properties(rotation) of intro5 text starts */
+@keyframes rotateIntro5 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+
+/* animating properties(rotation) of intro5 text ends */
+
+.intro5::after {
+  content: "";
+  animation: introTextAnimation5 60s steps(1) infinite normal;
+}
+
+/* animating properties of intro5 text starts */
+
+@keyframes introTextAnimation5 {
+  0% {
+    content: "MY GOAL IS TO ENRICH MY PROJECTS WITH SPEED, INTERACTIVITY AND RELIABILITY ACROSS ALL TARGET DEVICES AND PLATFORMS. ";
+    color: #fff;
+  }
+
+  16.66% {
+    content: "IF YOU FEEL INTERESTED IN WORKING TOGETHER ON A PROJECT THEN PLEASE GET IN TOUCH!";
+    color: #494545;
+  }
+
+  33.32% {
+    content: "I’M A SOFTWARE DEVELOPER AND A DIGITAL ARTIST, FEELS GREAT TO HAVE YOU ON BOARD :)";
+  }
+
+  49.98% {
+    content: "I LOVE TO WORK ON CREATING MEANINGFUL APPLICATIONS WITH SIMPLE, INTUITIVE DESIGNS TO ENABLE RICH EXPERIENCES.";
+  }
+
+  66.64% {
+    content: " APART FROM ADDING MAGIC TO MUNDANE, STORIES MAKE OUR LIVES SPECIAL. ";
+  }
+
+  83.3% {
+    content: "DONNING DIFFERENT HATS IN DOMAINS LIKE  DESIGN, DEVELOPMENT, VIDEO PRODUCTION ETC, IS WHAT I DO.";
+  }
+
+  100% {
+    content: "MY GOAL IS TO ENRICH MY PROJECTS WITH SPEED, INTERACTIVITY AND RELIABILITY ACROSS ALL TARGET DEVICES AND PLATFORMS. ";
+    color: #fff;
+  }
+}
+/* animating properties of intro5 text ends */
+/* main navbullets5 starts */
+
+.main--navbullets5 {
+  /* needed to provide bottom margin to slides */
+  display: flex;
+  gap: 2.5em;
+  /* 40px */
+  margin-top: 15px;
+  margin-left: 2%;
+  margin-right: 2%;
+  /* margin-bottom: 286px; */
+  animation: rotateNavBullets5 10s ease-out infinite;
+}
+
+/* animating properties(rotation) of navbullets5  starts */
+@keyframes rotateNavBullets5 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+
+/* animating properties(rotation) of navbullets5 ends */
+
+/* 1 */
+.navbullet5-1 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav5-bullet1Animation 60s steps(1) infinite;
+}
+
+.navbullet5-1:hover {
+  background: url("./images/bullet-selected.png") !important ;
+}
+/* animating properties(filled/unfilled) of navbullet5-1 starts */
+
+@keyframes nav5-bullet1Animation {
+  33.32% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  49.98% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet5-1 ends */
+
+/* 2 */
+.navbullet5-2 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav5-bullet2Animation 60s steps(1) infinite;
+}
+
+.navbullet5-2:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet5-2 starts */
+
+@keyframes nav5-bullet2Animation {
+  49.98% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  66.64% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  83.3% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet5-2 ends */
+
+/* 3 */
+.navbullet5-3 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav5-bullet3Animation 60s steps(1) infinite;
+}
+
+.navbullet5-3:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet5-3 starts */
+
+@keyframes nav5-bullet3Animation {
+  49.98% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  66.64% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  83.3% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet5-3 ends */
+
+/* 4 */
+.navbullet5-4 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav5-bullet4Animation 60s steps(1) infinite;
+}
+
+.navbullet5-4:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet5-4 starts */
+
+@keyframes nav5-bullet4Animation {
+  66.64% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  83.3% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  100% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet5-4 ends */
+
+/* 5 */
+.navbullet5-5 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav5-bullet5Animation 60s steps(1) infinite;
+}
+
+.navbullet5-5:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet5-5 starts */
+
+@keyframes nav5-bullet5Animation {
+  0% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  16.66% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet5-5 ends */
+
+/* 6 */
+.navbullet5-6 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+
+  animation: nav5-bullet6Animation 60s steps(1) infinite;
+}
+
+.navbullet5-6:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet5-6 starts */
+
+@keyframes nav5-bullet6Animation {
+  16.66% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  33.32% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet5-6 ends */
+/* main navbullets5 ends */
+
+/* media query for slide5   starts */
+/* for tablet viewport starts*/
+@media (max-width: 1250px) and (min-width: 760px) {
+  .main--navbullets5 {
+    gap: 1.563em;
+    /*desktop 40px */
+    /*tablet 25px */
+  }
+}
+/* for tablet viewport ends */
+
+/* for mobile viewport starts */
+@media (max-width: 430px) {
+  .main--navbullets5 {
+    gap: 0.875em;
+    /*desktop 40px */
+    /*tablet 25px */
+    /*mobile 14px */
+  }
+}
+/* for mobile viewport ends */
+/* media query for slide5 ends */
+/* slide5 ends */
+
+/* slide6 starts */
+#slide6-page {
+  background-color: #f0b720;
+  min-height: 100vh;
+  /* setting animated background colour starting from slide6 */
+  animation: backgroundColor6 60s steps(1) infinite normal;
+  /* 6 phases so if 60s duration 10 secs each phase gets  */
+}
+
+/* animating background colour of  slide6 starts */
+
+@keyframes backgroundColor6 {
+  0% {
+    background-color: #f0b720;
+  }
+
+  16.66% {
+    background-color: #f0b720;
+  }
+
+  33.32% {
+    background-color: #6fdfdf;
+  }
+
+  49.98% {
+    background-color: #83bd75;
+  }
+
+  66.64% {
+    background-color: #ffa1a1;
+  }
+
+  83.3% {
+    background-color: #383838;
+  }
+
+  100% {
+    background-color: #f0b720;
+  }
+}
+/* animating background colour of  slide6 ends */
+
+.title6 {
+  margin-bottom: 0;
+  animation: rotateTitle6 10s ease-out infinite;
+}
+
+/* animating properties(rotation) of title6 text starts */
+
+@keyframes rotateTitle6 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+
+/* animating properties(rotation) of title6 text ends */
+
+.title6::after {
+  content: "";
+  animation: titleTextAnimation6 60s steps(1) infinite normal;
+}
+
+/* animating properties(content) of title6 text starts */
+@keyframes titleTextAnimation6 {
+  0% {
+    content: "LET'S COLLABORATE";
+  }
+
+  16.66% {
+    content: "NAMASTE! I'M ANUBHAV";
+  }
+
+  33.32% {
+    content: "DESIGN + DEVELOPMENT ?";
+  }
+
+  49.98% {
+    content: "STORYTELLING’S MY JAM!";
+  }
+
+  66.64% {
+    content: "MULTIDISCIPLINE";
+  }
+
+  83.3% {
+    content: "WORK AND PLAY :)";
+  }
+
+  100% {
+    content: "LET'S COLLABORATE";
+  }
+}
+/* animating properties(content) of title6 text ends */
+
+.intro6 {
+  margin-top: 0;
+  margin-bottom: 0.625em;
+  animation: rotateIntro6 10s ease-out infinite;
+}
+
+/* animating properties(rotation) of intro6 text starts */
+@keyframes rotateIntro6 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+
+/* animating properties(rotation) of intro6 text ends */
+
+.intro6::after {
+  content: "";
+  animation: introTextAnimation6 60s steps(1) infinite normal;
+}
+
+/* animating properties of intro6 text starts */
+
+@keyframes introTextAnimation6 {
+  0% {
+    content: "IF YOU FEEL INTERESTED IN WORKING TOGETHER ON A PROJECT THEN PLEASE GET IN TOUCH!";
+    color: #494545;
+  }
+
+  16.66% {
+    content: "I’M A SOFTWARE DEVELOPER AND A DIGITAL ARTIST, FEELS GREAT TO HAVE YOU ON BOARD :)";
+  }
+
+  33.32% {
+    content: "I LOVE TO WORK ON CREATING MEANINGFUL APPLICATIONS WITH SIMPLE, INTUITIVE DESIGNS TO ENABLE RICH EXPERIENCES.";
+  }
+
+  49.98% {
+    content: " APART FROM ADDING MAGIC TO MUNDANE, STORIES MAKE OUR LIVES SPECIAL. ";
+  }
+
+  66.64% {
+    content: "DONNING DIFFERENT HATS IN DOMAINS LIKE  DESIGN, DEVELOPMENT, VIDEO PRODUCTION ETC, IS WHAT I DO.";
+  }
+
+  83.3% {
+    content: "MY GOAL IS TO ENRICH MY PROJECTS WITH SPEED, INTERACTIVITY AND RELIABILITY ACROSS ALL TARGET DEVICES AND PLATFORMS. ";
+    color: #fff;
+  }
+
+  100% {
+    content: "IF YOU FEEL INTERESTED IN WORKING TOGETHER ON A PROJECT THEN PLEASE GET IN TOUCH!";
+    color: #494545;
+  }
+}
+/* animating properties of intro6 text ends */
+/* main navbullets6 starts */
+
+.main--navbullets6 {
+  /* needed to provide bottom margin to slides */
+  display: flex;
+  gap: 2.5em;
+  /* 40px */
+  margin-top: 15px;
+  margin-left: 2%;
+  margin-right: 2%;
+  /* margin-bottom: 286px; */
+  animation: rotateNavBullets6 10s ease-out infinite;
+}
+
+/* animating properties(rotation) of navbullets6  starts */
+@keyframes rotateNavBullets6 {
+  0% {
+    transform: translateX(-8%) translateY(-8%) rotate(-12deg);
+    opacity: 0;
+  }
+
+  4% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    opacity: 100%;
+  }
+}
+
+/* animating properties(rotation) of navbullets6 ends */
+
+/* 1 */
+.navbullet6-1 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav6-bullet1Animation 60s steps(1) infinite;
+}
+
+.navbullet6-1:hover {
+  background: url("./images/bullet-selected.png") !important ;
+}
+/* animating properties(filled/unfilled) of navbullet6-1 starts */
+
+@keyframes nav6-bullet1Animation {
+  16.66% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  33.32% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet6-1 ends */
+
+/* 2 */
+.navbullet6-2 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav6-bullet2Animation 60s steps(1) infinite;
+}
+
+.navbullet6-2:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet6-2 starts */
+
+@keyframes nav6-bullet2Animation {
+  33.32% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  49.98% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet6-2 ends */
+
+/* 3 */
+.navbullet6-3 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav6-bullet3Animation 60s steps(1) infinite;
+}
+
+.navbullet6-3:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet6-3 starts */
+
+@keyframes nav6-bullet3Animation {
+  49.98% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  66.64% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  83.3% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet6-3 ends */
+
+/* 4 */
+.navbullet6-4 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav6-bullet4Animation 60s steps(1) infinite;
+}
+
+.navbullet6-4:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet6-4 starts */
+
+@keyframes nav6-bullet4Animation {
+  49.98% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  66.64% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  83.3% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet6-4 ends */
+
+/* 5 */
+.navbullet6-5 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+  animation: nav6-bullet5Animation 60s steps(1) infinite;
+}
+
+.navbullet6-5:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet6-5 starts */
+
+@keyframes nav6-bullet5Animation {
+  66.64% {
+    background: url("./images/bullet-unselected.png");
+  }
+
+  83.3% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  100% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+
+/* animating properties(filled/unfilled) of navbullet6-5 ends */
+
+/* 6 */
+.navbullet6-6 {
+  width: 1.171em;
+  /* 18.73px */
+  height: 1.171em;
+  background: url("./images/bullet-unselected.png");
+  cursor: pointer;
+
+  animation: nav6-bullet6Animation 60s steps(1) infinite;
+}
+
+.navbullet6-6:hover {
+  background: url("./images/bullet-selected.png") !important;
+}
+
+/* animating properties(filled/unfilled) of navbullet6-6 starts */
+
+@keyframes nav6-bullet6Animation {
+  0% {
+    background: url("./images/bullet-selected.png");
+  }
+
+  16.66% {
+    background: url("./images/bullet-unselected.png");
+  }
+}
+/* animating properties(filled/unfilled) of navbullet6-6 ends */
+/* main navbullets6 ends */
+
+/* media query for slide6   starts */
+/* for tablet viewport starts*/
+@media (max-width: 1250px) and (min-width: 760px) {
+  .main--navbullets6 {
+    gap: 1.563em;
+    /*desktop 40px */
+    /*tablet 25px */
+  }
+}
+/* for tablet viewport ends */
+
+/* for mobile viewport starts */
+@media (max-width: 430px) {
+  .main--navbullets6 {
+    gap: 0.875em;
+    /*desktop 40px */
+    /*tablet 25px */
+    /*mobile 14px */
+  }
+}
+/* for mobile viewport ends */
+/* media query for slide6 ends */
+/* slide6 ENDS */
+
+/* about page starts */
+#about-page {
+  background-color: #ffa1a1;
+  min-height: 100vh;
+}
+
+.about--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  gap: 8%;
+  margin-top: 11%;
+  animation: aboutcontaineranimation 4s ease-in-out;
+}
+
+@keyframes aboutcontaineranimation {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 100%;
+  }
+}
+
+.about--left_container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about--right_container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about--love_image {
+  width: 75%;
+  cursor: pointer;
+}
+
+.about--love_image:hover {
+  background: url("./images/about-love-selected.png") no-repeat;
+  background-size: 100%;
+  animation: loveimageanimation 1s ease-in-out;
+}
+
+.about--love_image-addedClass {
+  background: url("./images/about-love-selected.png") no-repeat;
+  background-size: 100%;
+  animation: loveimageanimation 1s ease-in-out;
+}
+
+@keyframes loveimageanimation {
+  0% {
+    opacity: 70%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.disabled {
+  pointer-events: none; /* <----------- */
+  opacity: 0.5;
+}
+
+.about--core_image {
+  width: 75%;
+}
+
+.about--core_image:hover {
+  background: url("./images/about-core-selected.png") no-repeat;
+  background-size: 108%;
+  background-position: -22px;
+  animation: coreimageanimation 1.2s ease-in-out;
+}
+
+@keyframes coreimageanimation {
+  0% {
+    opacity: 70%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.about--core_image-addedClass {
+  background: url("./images/about-core-selected.png") no-repeat;
+  background-size: 108%;
+  background-position: -22px;
+  animation: coreimageanimation 1.2s ease-in-out;
+}
+
+@media (max-width: 430px) {
+  .about--core_image:hover {
+    background: url("./images/about-core-selected.png") no-repeat;
+    background-size: 108%;
+    background-position: -12px;
+  }
+
+  .about--container {
+    margin-top: 45%;
+  }
+}
+/* about page ends */
+
+/* about/love page starts */
+#love-page {
+  background-color: #f0b720;
+  min-height: 100vh;
+}
+
+.love--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  animation: lovecontaineranimation 4s ease-in-out;
+}
+
+@keyframes lovecontaineranimation {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.love--container_left {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.love--container_right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  padding-bottom: 10%;
+}
+
+.love--top_text {
+  margin-bottom: 0;
+  margin-top: 0;
+
+  font-family: "Amatic SC", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 126px;
+  color: #ffffff;
+}
+
+.love--interest {
+  text-align: center;
+  position: relative;
+
+  font-family: "ClarkOpti-Demi", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.love--pinwheel {
+  width: 28%;
+  margin-bottom: 0;
+  animation: lovepinwheelanimation 10s linear infinite;
+}
+
+@keyframes lovepinwheelanimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.love--eldenring1 {
+  width: 85%;
+  border-radius: 20px;
+  margin-top: 1%;
+}
+
+.love--recent_love_title {
+  font-family: "Amatic SC", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 84px;
+  text-align: center;
+  margin-bottom: 2%;
+  color: #ffffff;
+}
+
+.love--recent_love_description {
+  font-family: "ClarkOpti-Demi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 0;
+  background-color: #fff;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #383838;
+}
+/* about/love page ends */
+
+/* about/core page start */
+#core-page {
+  background-color: #494545;
+  min-height: 100vh;
+}
+
+.core-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+.core--title {
+  text-align: center;
+  font-family: Amatic SC, sans-serif;
+  font-size: 70px;
+  color: #fff;
+  margin-bottom: 1%;
+  animation: coretitleanimation 3s ease-in-out;
+}
+
+@keyframes coretitleanimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.core--dialogue1 {
+  /* background-color:#6FDFDF; */
+  text-align: center;
+  font-family: ClarkOpti-Demi, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  margin-left: 10%;
+  margin-right: 10%;
+  animation: coredialogue1animation 3s ease-in-out;
+}
+
+@keyframes coredialogue1animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.core--dialogue2 {
+  text-align: center;
+  font-family: ClarkOpti-Demi, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 10%;
+
+  animation: coredialogue2animation 3s ease-in-out;
+}
+
+@keyframes coredialogue2animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+/* about/core page ends */
+/* about page ends */
+
+/* skills page starts */
+#skills-page {
+  background-color: #383838;
+  min-height: 100vh;
+}
+
+.skills--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 12%;
+  margin-right: 12%;
+  padding-bottom: 10%;
+}
+
+.skills--row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 15%;
+  flex-wrap: wrap;
+  animation: skills--row1 3s;
+}
+
+@keyframes skills--row1 {
+  0% {
+    transform: translateX(-500%);
+  }
+
+  30% {
+    transform: translateX(0);
+  }
+}
+
+.skills--row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  animation: skills--row2 3s;
+}
+
+@keyframes skills--row2 {
+  0% {
+    transform: translateX(-500%);
+  }
+
+  30% {
+    transform: translateX(0);
+  }
+}
+
+.skills--lists {
+  width: 143px;
+  height: 35px;
+  background: rgba(196, 196, 196, 0.3);
+  border-radius: 15px;
+  color: #ffffff;
+
+  /* font */
+  font-family: "ClarkOpti-Demi";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.skills--lists:hover {
+  color: #383838;
+  background: #fff;
+  cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+  .skills--title_text {
+    width: 75%;
+    margin-top: 2%;
+    margin-left: 8%;
+
+    /* font */
+    font-family: "Amatic SC";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 126px;
+    text-align: center;
+    letter-spacing: 1em;
+    color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 2%;
+    animation: skills--containerAnimation 10s;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1000px) {
+  .skills--title_text {
+    /* width:95%; */
+    margin-top: 2%;
+    margin-left: 12%;
+
+    /* font */
+    font-family: "Amatic SC";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+
+    line-height: 126px;
+    text-align: center;
+    letter-spacing: 1em;
+    color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 2%;
+    animation: skills--containerAnimation 10s;
+  }
+}
+
+@media (max-width: 760px) {
+  .skills--title_text {
+    /* width:95%; */
+    margin-top: 2%;
+    margin-left: 12%;
+
+    /* font */
+    font-family: "Amatic SC";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 106px;
+    text-align: center;
+    letter-spacing: 0.78em;
+    color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 2%;
+    animation: skills--containerAnimation 10s;
+  }
+}
+@keyframes skills--containerAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+}
+/* skills page ends */
+
+/* projects page starts */
+#projects-page {
+  background-color: rgba(194, 189, 189, 0.733);
+  min-height: 100vh;
+}
+
+.cards-lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 10%;
+  animation: cardListsAnimation 1s ease-in-out;
+}
+
+@keyframes cardListsAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+}
+
+.projects--card {
+  width: 300px;
+  height: 300px;
+  border-radius: 7px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  padding-left: 2%;
+  padding-right: 2%;
+  cursor: pointer;
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.card--title {
+  margin-top: 3%;
+  text-align: center;
+  font-family: ClarkOpti-Demi, sans-serif;
+  font-size: 30px;
+  margin-bottom: 0;
+  color: #383838;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.card--description {
+  margin-top: 2%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1em;
+  margin-bottom: 0;
+  color: grey;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.card--button {
+  margin-top: 10px;
+  background-color: #383838;
+  font-family: ClarkOpti-Demi, sans-serif;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 130%;
+  border: none;
+}
+/* projects page ends */
+
+/* contact page starts */
+#contact-page {
+  background-color: #383838;
+  min-height: 100vh;
+}
+
+.contact--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40%;
+  height: 50px;
+  animation: contactcontaineranimation 2.5s ease-in-out;
+}
+
+@keyframes contactcontaineranimation {
+  0% {
+    transform: translateX(-500%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* image starts */
+
+.contact--image {
+  width: 35%;
+}
+
+/* image ends */
+
+/* contact card left starts */
+.contact--card_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  top: -370px;
+  left: -180px;
+}
+
+.contact--heading {
+  color: #fff;
+  font-family: ClarkOpti-Demi, sans-serif;
+  font-size: 2.5em;
+  /* 40px */
+  margin-bottom: 4%;
+}
+
+.contact--text1 {
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+  max-width: 220px;
+  margin-top: 0;
+}
+
+.contact--text2 {
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+  max-width: 220px;
+}
+
+.contact--text2 a {
+  text-decoration: none;
+  color: inherit;
+}
+/* contact card left ends */
+
+/* contact card right starts */
+.contact--card_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  top: -650px;
+  left: 120px;
+}
+
+.contact--username {
+  color: #fff;
+  font-family: ClarkOpti-Demi, sans-serif;
+  font-size: 16px;
+  font-weight: regular;
+  margin-bottom: 2px;
+}
+
+.contact--username_box {
+  height: 27px;
+
+  width: 197px;
+}
+
+.contact--useremail {
+  position: relative;
+
+  font-family: ClarkOpti-Demi, sans-serif;
+  font-size: 16px;
+  font-weight: regular;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.contact--useremail_box {
+  height: 27px;
+
+  width: 197px;
+}
+
+.contact--textarea {
+  position: relative;
+
+  font-family: ClarkOpti-Demi, sans-serif;
+  font-size: 16px;
+  font-weight: regular;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.contact--textarea_box {
+  height: 115px;
+  width: 314px;
+}
+
+/* form starts */
+
+.contact--form {
+  position: relative;
+  top: -240px;
+  left: 5px;
+}
+
+form input {
+  background-color: #383838;
+  color: #fff;
+  border-width: 0px;
+  outline: none;
+}
+
+.contact--input_useremail {
+  position: relative;
+  top: 46px;
+}
+
+form textarea {
+  width: 303px;
+  height: 108px;
+  background-color: #383838;
+  border-width: 0px;
+  outline: none;
+  color: #fff;
+
+  position: relative;
+  top: 38px;
+}
+
+.contact--char_limit {
+  font-family: raleway, sans-serif;
+  font-size: 16px;
+}
+
+.contact--button {
+  position: relative;
+  left: 230px;
+  top: 30px;
+
+  font-family: ClarkOpti-Demi, sans-serif;
+  font-size: 30px;
+  font-weight: light;
+  color: #383838;
+  border-radius: 7px;
+  width: 80px;
+  border: none;
+}
+
+.contact--sentmessage {
+  color: #383838;
+  background-color: #fff;
+  font-family: ClarkOpti-Demi, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* form ends */
+/* contact card right ends */
+
+/* media query starts */
+
+@media (max-width: 1500px) {
+  .contact--container {
+    margin-top: 50%;
+  }
+  .contact--char_limit {
+    font-family: raleway, sans-serif;
+    font-size: 14px;
+  }
+
+  .contact--image {
+    width: 60%;
+  }
+
+  .contact--card_left {
+    left: -230px;
+    top: -420px;
+  }
+
+  .contact--card_right {
+    left: 150px;
+    top: -690px;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1210px) {
+  .contact--container {
+    margin-top: 60%;
+  }
+  .contact--char_limit {
+    font-family: raleway, sans-serif;
+    font-size: 14px;
+  }
+
+  .contact--image {
+    width: 75%;
+  }
+
+  .contact--card_left {
+    left: -230px;
+    top: -400px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1000px) {
+  .contact--container {
+    margin-top: 85%;
+  }
+
+  .contact--image {
+    width: 70%;
+  }
+
+  .contact--card_left {
+    top: -310px;
+    left: -150px;
+  }
+
+  .contact--heading {
+    color: #fff;
+    font-family: ClarkOpti-Demi, sans-serif;
+    font-size: 30px;
+    /* 40px */
+    margin-bottom: 4%;
+  }
+
+  .contact--text1 {
+    font-size: 13px;
+    max-width: 180px;
+  }
+
+  .contact--text2 {
+    font-size: 13px;
+    max-width: 180px;
+  }
+
+  .contact--card_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    top: -545px;
+    left: 65px;
+  }
+  .contact--username {
+    font-size: 14px;
+  }
+
+  .contact--username_box {
+    width: 190px;
+    height: 27px;
+  }
+
+  .contact--useremail {
+    font-size: 14px;
+  }
+
+  .contact--useremail_box {
+    width: 190px;
+    height: 27px;
+  }
+
+  .contact--textarea {
+    font-size: 14px;
+  }
+
+  .contact--form {
+    position: relative;
+    top: -185px;
+    left: 5px;
+  }
+
+  .contact--input_useremail {
+    position: relative;
+    top: 38px;
+  }
+
+  .contact--textarea_box {
+    width: 205px;
+    height: 70px;
+  }
+
+  form textarea {
+    width: 195px;
+    height: 60px;
+    position: relative;
+    top: 24px;
+  }
+
+  .contact--char_limit {
+    font-family: raleway, sans-serif;
+    font-size: 12px;
+  }
+
+  .contact--button {
+    position: relative;
+    left: 150px;
+    top: 20px;
+    font-size: 18px;
+    width: 55px;
+  }
+
+  .contact--sentmessage {
+    color: #383838;
+    background-color: #fff;
+    font-family: ClarkOpti-Demi, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .contact--container {
+    margin-top: 115%;
+  }
+
+  .contact--image {
+    width: 85%;
+  }
+
+  .contact--card_left {
+    top: -180px;
+    left: -91px;
+  }
+
+  .contact--heading {
+    font-size: 16px;
+    /* 40px */
+    margin-bottom: 1%;
+  }
+
+  .contact--text1 {
+    font-size: 8px;
+    max-width: 100px;
+  }
+
+  .contact--text2 {
+    font-size: 8px;
+    max-width: 100px;
+  }
+
+  .contact--card_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    top: -345px;
+    left: 55px;
+  }
+  .contact--username {
+    font-size: 10px;
+  }
+
+  .contact--username_box {
+    width: 90px;
+    height: 20px;
+  }
+
+  .contact--useremail {
+    font-size: 10px;
+  }
+
+  .contact--useremail_box {
+    width: 90px;
+    height: 20px;
+  }
+
+  .contact--textarea {
+    font-size: 10px;
+  }
+
+  .contact--form {
+    position: relative;
+    top: -117px;
+    left: 5px;
+  }
+
+  .contact--input_useremail {
+    position: relative;
+    top: 26px;
+  }
+
+  form input {
+    height: 15px;
+    width: 80px;
+  }
+
+  .contact--textarea_box {
+    width: 135px;
+    height: 30px;
+  }
+
+  form textarea {
+    width: 135px;
+    height: 30px;
+    position: relative;
+    top: -4px;
+  }
+
+  .contact--char_limit {
+    font-family: raleway, sans-serif;
+    font-size: 8px;
+  }
+  .contact--button {
+    position: relative;
+    left: -20px;
+    top: 30px;
+    font-size: 20px;
+    width: 55px;
+  }
+
+  .contact--sentmessage {
+    font-size: 12px;
+    padding: 15px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* contact page ends */
