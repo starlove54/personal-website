@@ -1,18 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import App from "./Components/App";
 import "./css/style.css"
-import { HashRouter} from "react-router-dom";
 
-
-
-// slash (default) /#/
-// noslash /#
-// hashbang  /#!/
-// basename ="/something"
-
-ReactDOM.render(
-    <HashRouter hashType ="hashbang"  >
+const root = document.querySelector('#root');
+ReactDOM.createRoot(root).render(
+    <React.StrictMode>
         <App/>
-    </HashRouter>
- , document.querySelector( "#root"));
+    </React.StrictMode>
+);

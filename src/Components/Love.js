@@ -9,13 +9,11 @@ function Love() {
         <body id ="love-page">
                 <Navbar/>
             <div className= "love--container">
-        
 
             <div className ="love--container_left">
             <img className="love--pinwheel" src="../images/about-love-pinwheel.png" alt ="pinwheel"/>
             <p className ="love--top_text">I LOVE</p>
-
-                 <p className ="love--interest">STUDIO GHIBLI</p>
+                <p className ="love--interest">STUDIO GHIBLI</p>
                 <p className ="love--interest">TRAVEL</p>
                 <p className ="love--interest">GYM</p>
                 <p className ="love--interest">BETTER CALL SAUL</p>

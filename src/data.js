@@ -6,10 +6,10 @@
 export default [
     {
         id:1,
-        coverImg: "tenziesgame.jpg" ,
-        title: "Tenzies Game",
-        description: " A simple game made with javascript and react",
-        url:"https://guyfromhills.github.io/tenzies-game/"
+        coverImg: "feedback-app.jpg" ,
+        title: "Feedback App",
+        description: " A react feedback app which can add, edit or delete feedback",
+        url:"https://anubhavnegi-portfolio-feedback-app.netlify.app/"
     },
 
     {
@@ -17,7 +17,7 @@ export default [
         coverImg: "memegenerator.JPG" ,
         title: "Meme Generator",
         description: "Generate random memes and spread fun 😈",
-        url:"https://guyfromhills.github.io/meme-template-generator/"
+        url:"https://starlove54.github.io/meme-template-generator/"
 
     },
 
@@ -26,7 +26,7 @@ export default [
         coverImg: "speechsynthesis.jpg" ,
         title: "Speech Synthesis",
         description: "Generate speech of input text in different voices",
-        url:"https://guyfromhills.github.io/Speech-Synthesis-23-vanilla_JS_challenge/"
+        url:"https://speechsynthesis-app-anubhav-portfolio.netlify.app/"
 
     },
 
@@ -35,7 +35,7 @@ export default [
         coverImg: "nativespeechrecognition.jpg" ,
         title: "Native Speech Recognition",
         description: "A speech to text project",
-        url:"https://guyfromhills.github.io/Native-Speech-Recognition-20-vanilla_JS_challenge/"
+        url:"https://speechrecognition-anubhav-portfolio.netlify.app/"
 
     },
 
@@ -45,16 +45,16 @@ export default [
         coverImg: "anubhav-logo.png" ,
         title: "Anubhav Negi",
         description: "My personal creative space",
-        url:"https://guyfromhills.github.io/personal-website"
+        url:"https://anubhavnegi.com/"
 
     },
 
     {
         id:6,
-        coverImg: "light-dark-theme.jpg" ,
-        title: "React Light & Dark",
-        description: "A simple app incorporating light and dark themes",
-        url:"https://guyfromhills.github.io/light-dark-theme-feature-app/"
+        coverImg: "dad-jokes.jpg" ,
+        title: "Dad Jokes",
+        description: "A nuxt application that displays corny dad jokes.",
+        url:"https://dadjokes-anubhav-portfolio.netlify.app/"
 
     },
     {
@@ -70,7 +70,7 @@ export default [
         coverImg: "netflix-clone-landing-page.jpg" ,
         title: "Netflix Clone",
         description: "A netlfix clone made purely with HTML, CSS and javascript",
-        url:"https://guyfromhills.github.io/Netflix-Landing-Page-Clone/"
+        url:"https://netflix-landingpage-anubhav-portfolio.netlify.app/"
 
     }
 ]

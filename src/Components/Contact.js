@@ -37,13 +37,13 @@ function Contact() {
             <div className ="contact--card_left" >
             <p className="contact--heading">REACH ME</p>
             <p className="contact--text1">If you want to send a  direct message please fill out the form on right and click on the send button. I will try to respond as soon  as possible.</p>
-            <p className="contact--text2">I am quite active on twitter which could also be used to engage directly with me. Follow me <a href="https://twitter.com/guyfromhills"><b>@guyfromhills</b></a> on twitter.</p>
+            <p className="contact--text2">I am quite active on twitter which could also be used to engage directly with me. Follow me <a href="https://twitter.com/anubhavnegi54"><b>@anubhavnegi54</b></a> on twitter.</p>
              </div>
 
                 <div className ="contact--card_right">
-                <p className="contact--username">NAME:*</p>
+                <p className="contact--username">Name:*</p>
                 <img src="../images/contact_name.png" className="contact--username_box" alt ="namebox"/>
-                <p className="contact--useremail">EMAIL:*</p>
+                <p className="contact--useremail">Email-id:*</p>
                 <img src="../images/contact_name.png" className="contact--useremail_box" alt ="emailbox"/>
                 <p className="contact--textarea">MESSAGE:* <span className ="contact--char_limit"> (800 chars max)</span></p>
                 <img src="../images/contact_textarea.png" className="contact--textarea_box" alt ="textareabox"/>
