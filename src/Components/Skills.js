@@ -22,7 +22,7 @@ function Skills() {
                 <p className ="skills--title_text">Skills</p>
                  <div className ="skills--row2">
                  <div className ="skills--lists" >VIDEO PRODUCTION</div>
-                 <div className ="skills--lists" >POST PRODUCTION</div>
+                 <div className ="skills--lists" >POST PRODUCTION </div>
                     <div className ="skills--lists" >CREATIVE SUITE</div>
                     <div className ="skills--lists" >BLENDER 3D</div>
                     <div className ="skills--lists" >UNREAL ENGINE</div>

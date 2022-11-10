@@ -6,7 +6,6 @@ import Slide3 from "./Slide3";
 import Slide4 from "./Slide4";
 import Slide5 from "./Slide5";
 import Slide6 from "./Slide6";
-import NotFound from "./NotFound";
 import Contact from './Contact';
 import Projects from './Projects';
 import Skills from './Skills';
