@@ -4,7 +4,6 @@ import Footer from "./Footer";
 import {Link} from "react-router-dom"
 
 function Slide1(){
-
     return  (
         <body id="slide1-page">
             <div>
@@ -22,7 +21,7 @@ function Slide1(){
             </Link>
             <div className = "main--navbullets">
             <Link to="/"><div className="navbullet-1"></div></Link>
-            <Link to="/slide2"><div className = "navbullet-2"></div></Link>
+            <Link to="/slide2"><div className = "navbullet-2"></div></Link>git branch -a
             <Link to="/slide3"><div className = "navbullet-3"></div></Link>
             <Link to="/slide4"><div className = "navbullet-4"></div></Link>
             <Link to="/slide5"><div className = "navbullet-5"></div></Link>
@@ -34,6 +33,5 @@ function Slide1(){
         </body>
     )
 }
-
 
 export default Slide1;
